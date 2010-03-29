@@ -34,7 +34,7 @@ public class UrlInvokeJob implements Job{
 		return null;
 	}
 
-	private void invokeUrl(String stringUrl) throws IOException {
+	public static void invokeUrl(String stringUrl) throws IOException {
 		URL url = new URL(stringUrl);
 		URLConnection conn = url.openConnection();
 		conn.setRequestProperty("X-RAPID-CRON", "true");
