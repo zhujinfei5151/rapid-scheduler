@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+  <scheduler_job 
+	job_name='JobName684' 
+	group_name='GroupName834' 
+	cron='Cron601' 
+	description='Description001' 
+	url='Url753' 
+	status='Status310' 
+  />
+  
+</dataset>

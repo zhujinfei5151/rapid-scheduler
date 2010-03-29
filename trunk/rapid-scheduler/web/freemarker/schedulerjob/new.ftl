@@ -1,0 +1,32 @@
+
+<#include "/commons/macro.ftl" />
+
+<@override name="head">
+	<title>SchedulerJob.TABLE_ALIAS 新增</title>
+</@override>
+
+<@override name="content">
+	<form method="post" action="${ctx}/schedulerjob" >
+		<input id="submitButton" name="submitButton" type="submit" value="提交" />
+		<input type="button" value="返回列表" onclick="window.location='${ctx}/schedulerjob'"/>
+		<input type="button" value="后退" onclick="history.back();"/>
+		
+		<table class="formTable">
+		<#include "form_include.ftl" />
+		</table>
+	</form>
+	
+	<script>
+		
+		new Validation(document.forms[0],{onSubmit:true,onFormValidate : function(result,form) {
+			var finalResult = result;
+			
+			//在这里添加自定义验证
+			
+			return disableSubmit(finalResult,'submitButton');
+		}});
+	</script>
+</@override>
+
+
+<@extends name="/base.ftl"/>
