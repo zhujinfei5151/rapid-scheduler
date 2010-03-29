@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+  <scheduler_property 
+	config_key='ConfigKey707' 
+	config_value='ConfigValue409' 
+	default_value='DefaultValue069' 
+	description='Description204' 
+  />
+  
+</dataset>
